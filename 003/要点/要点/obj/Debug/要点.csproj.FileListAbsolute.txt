@@ -1,0 +1,6 @@
+C:\Users\hercules\Desktop\极客学院作业\第三次\要点\要点\bin\要点.dll.config
+C:\Users\hercules\Desktop\极客学院作业\第三次\要点\要点\bin\要点.dll
+C:\Users\hercules\Desktop\极客学院作业\第三次\要点\要点\bin\要点.pdb
+C:\Users\hercules\Desktop\极客学院作业\第三次\要点\要点\obj\Debug\要点.csprojResolveAssemblyReference.cache
+C:\Users\hercules\Desktop\极客学院作业\第三次\要点\要点\obj\Debug\要点.dll
+C:\Users\hercules\Desktop\极客学院作业\第三次\要点\要点\obj\Debug\要点.pdb

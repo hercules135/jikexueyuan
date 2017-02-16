@@ -1,0 +1,62 @@
+﻿body,html{
+    height:100%;
+}
+body{
+    /*body作为容器让内部元素居中*/
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+a{
+    position:absolute;top:0;left:0;
+}
+.con{
+    margin:0 auto;
+    width:300px;
+    height:300px;
+    position:relative;
+    
+}
+.con div{
+    width:100px;height:100px;
+    box-sizing:border-box;
+    position:absolute;
+    box-shadow:0 0 10px black;
+
+}
+.con div:nth-child(1){
+    left:100px;
+    top:0;
+    background:#FF4124;
+}
+.con div:nth-child(2){
+    left:0;
+    top:100px;
+    background:#A6325A;
+}
+.con div:nth-child(3){
+    left:100px;
+    top:100px;
+    box-shadow:none;
+    z-index:-1;/*不要挡住阴影*/
+    
+}
+.con div:nth-child(3) img{
+    margin: auto;  
+    position: absolute;  
+    top: 0; left: 0; bottom: 0; right: 0;  
+}
+.con div:nth-child(4){
+    left:200px;
+    top:100px;
+    background:#206FA1;
+}
+.con div:nth-child(5){
+    left:100px;
+    top:200px;
+    background:#48A7C2;
+}

@@ -1,0 +1,6 @@
+C:\Users\hercules\Desktop\极客学院作业\005\计算\计算\bin\计算.dll.config
+C:\Users\hercules\Desktop\极客学院作业\005\计算\计算\bin\计算.dll
+C:\Users\hercules\Desktop\极客学院作业\005\计算\计算\bin\计算.pdb
+C:\Users\hercules\Desktop\极客学院作业\005\计算\计算\obj\Debug\计算.csprojResolveAssemblyReference.cache
+C:\Users\hercules\Desktop\极客学院作业\005\计算\计算\obj\Debug\计算.dll
+C:\Users\hercules\Desktop\极客学院作业\005\计算\计算\obj\Debug\计算.pdb

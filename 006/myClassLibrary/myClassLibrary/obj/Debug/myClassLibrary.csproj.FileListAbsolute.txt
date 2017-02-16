@@ -1,0 +1,6 @@
+C:\Users\hercules\Desktop\极客学院作业\006\myClassLibrary\myClassLibrary\bin\Debug\myClassLibrary.dll
+C:\Users\hercules\Desktop\极客学院作业\006\myClassLibrary\myClassLibrary\bin\Debug\myClassLibrary.pdb
+C:\Users\hercules\Desktop\极客学院作业\006\myClassLibrary\myClassLibrary\bin\Debug\Newtonsoft.Json.dll
+C:\Users\hercules\Desktop\极客学院作业\006\myClassLibrary\myClassLibrary\obj\Debug\myClassLibrary.dll
+C:\Users\hercules\Desktop\极客学院作业\006\myClassLibrary\myClassLibrary\obj\Debug\myClassLibrary.pdb
+C:\Users\hercules\Desktop\极客学院作业\006\myClassLibrary\myClassLibrary\obj\Debug\myClassLibrary.csprojResolveAssemblyReference.cache

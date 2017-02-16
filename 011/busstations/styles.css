@@ -1,0 +1,231 @@
+.fl {
+  float: left;
+}
+.clear {
+  content: "";
+  display: block;
+  clear: both;
+}
+#underground {
+  width: 320px;
+  height: 320px;
+  border: 40px solid red;
+  border-radius: 50%;
+  box-sizing: border-box;
+  position: absolute;
+  top: -146px;
+  left: 107px;
+  transform: scale(0.06);
+}
+#underground:before,
+#underground:after {
+  content: "";
+  background: white;
+  width: 80px;
+  height: 35px;
+}
+#underground:before {
+  position: absolute;
+  top: 150px;
+  right: initial;
+  bottom: initial;
+  left: -40px;
+}
+#underground:after {
+  position: absolute;
+  top: 75px;
+  right: initial;
+  bottom: initial;
+  left: 231px;
+}
+#line1 {
+  width: 240px;
+  height: 40px;
+  position: absolute;
+  top: 110px;
+  right: initial;
+  bottom: initial;
+  left: initial;
+  background: red;
+}
+#line1:before,
+#line2:before {
+  content: "";
+  position: absolute;
+  top: -55px;
+  right: initial;
+  bottom: initial;
+  left: 8px;
+  border-right: 75px solid transparent;
+  border-left: 75px solid transparent;
+  border-bottom: 95px solid red;
+}
+#line1:after,
+#line2:after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: initial;
+  bottom: initial;
+  left: 48px;
+  border-right: 36px solid transparent;
+  border-left: 36px solid transparent;
+  border-bottom: 45px solid white;
+  z-index: 2;
+}
+#line2 {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 147px;
+  right: initial;
+  bottom: initial;
+  left: 118px;
+  border-right: 7px solid transparent;
+  border-left: 7px solid transparent;
+  border-top: 9px solid red;
+}
+#line2:after {
+  position: absolute;
+  top: -51px;
+  right: initial;
+  bottom: initial;
+  left: 5px;
+}
+#line2:before {
+  position: absolute;
+  top: -101px;
+  right: initial;
+  bottom: initial;
+  left: -33px;
+}
+#num {
+  color: blue;
+  font-size: 200px;
+  z-index: 3;
+  position: relative;
+  text-align: center;
+  line-height: initial;
+}
+.container {
+  width: 400px;
+  height: 800px;
+  border: 1px solid gray;
+  box-shadow: 1px 1px 3px gray;
+  border-radius: 30px;
+  display: flex;
+  /*����flex��ʾ��ʽ*/
+  flex-direction: column;
+  /*��״��ֱ����*/
+  overflow: hidden;
+  font-weight: bold;
+}
+.container .header {
+  flex: 2;
+  border-radius: 30px 30px 0 0;
+  border-bottom: 1px solid black;
+  padding: 20px 10px 0 10px;
+  background: #14D207;
+}
+.container .header .title1 > div {
+  float: left;
+}
+.container .header .title1:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container .header .bigtitle {
+  width: 55%;
+  height: initial;
+  font-size: 58px;
+  color: #fff;
+  line-height: 105px;
+}
+.container .header .righttitle {
+  padding-left: 5px;
+  width: 45%;
+  height: initial;
+  font-size: 12px;
+  font-weight: 100;
+  box-sizing: border-box;
+}
+.container .header .company {
+  font-weight: bold;
+  font-size: 30px;
+}
+.container .header .target {
+  color: #fff;
+  font-size: 31px;
+  text-align: center;
+}
+.container .header .price {
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+.container .header .time > span {
+  width: 17%;
+  display: inline-block;
+}
+.container .content {
+  flex: 6;
+  padding-left: 75px;
+  margin-top: 5px;
+}
+.container .content .stations > div {
+  text-align: justify;
+  width: 250px;
+  font-size: 15px;
+  height: 28px;
+  line-height: 28px;
+}
+.container .content .stations > div > span {
+  display: inline-block;
+  /* Opera */
+  padding-left: 100%;
+}
+.container .content .arrow {
+  content: "";
+  position: absolute;
+  background: red;
+  left: 56px;
+  top: 225px;
+  height: 500px;
+  border-left: 18px solid red;
+}
+.container .content .arrow:after {
+  height: 0;
+  width: 0;
+  content: "";
+  position: absolute;
+  display: block;
+  top: 441px;
+  left: -25px;
+  border-top: red 80px solid;
+  border-left: 25px solid white;
+}
+.container .content .pass {
+  color: gray;
+}
+.container .content .thisstation {
+  color: orange;
+  position: relative;
+}
+.container .content .thisstation:before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: -26px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: orange;
+}
+.container .content .finial {
+  color: blue;
+}
+.footer {
+  height: 40px;
+  text-align: center;
+}

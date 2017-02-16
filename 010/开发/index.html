@@ -1,0 +1,545 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>百度</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/html5.js"></script>
+    <script src="js/PC.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/weather.js"></script>
+    <link href="css/StyleSheet1.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="pc">
+        <nav style="border-bottom:1px solid #ededed;">
+            <div id="weather">
+                <span id="city"></span>
+                <div class="weather">
+                    <div class="w_title"></div>
+                    <div style="width:100%;">
+                        <div class="w today">
+                            <div>今天（周六）</div>
+                            <img class="todaypicture"/>
+                            <div>9℃</div>
+                            <div>阴</div>
+                            <div>东北风微风</div>
+                        </div>
+                        <div class="w future">
+                            <div>今天（周六）</div>
+                            <img class="todaypicture" />
+                            <div>9℃</div>
+                            <div>阴</div>
+                            <div>东北风微风</div>
+                        </div>
+                        <div class="w future">
+                            <div>今天（周六）</div>
+                            <img class="todaypicture" />
+                            <div>9℃</div>
+                            <div>阴</div>
+                            <div>东北风微风</div>
+                        </div>
+                        <div class="w future">
+                            <div>今天（周六）</div>
+                            <img class="todaypicture" />
+                            <div>9℃</div>
+                            <div>阴</div>
+                            <div>东北风微风</div>
+                        </div>
+                        <div class="w future">
+                            <div>今天（周六）</div>
+                            <img class="todaypicture" />
+                            <div>9℃</div>
+                            <div>阴</div>
+                            <div>东北风微风</div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="skin_btn">
+                换肤
+            </div>
+            <div id="skin">
+                <div id="skin_kinds">
+                    <div id="skin_kindsdetail">
+                        <div>热门</div>
+                        <div class="skin_active">游戏</div>
+                        <div>卡通</div>
+                        <div>女神降临</div>
+                        <div>明星</div>
+                        <div>风景</div>
+                        <div>简约</div>
+                        <div>小清新</div>
+                        <div class="fun" id="touming">
+                            背景透明度
+                            <input type="range" id="range" min="1" value="100" max="100" step="1" />
+                            <span id="rangnum" style="width:20px;display:inline-block;">100%</span>
+                        </div>
+                        <div class="fun" id="disskin">×不适用换肤</div>
+                        <div class="fun" id="shouqi" style="color:#389cff;">↑收起</div>
+                    </div>
+                </div>
+                <div id="skin_kinds2" style="color:#38f;font-size:12px;">守望先锋</div>
+                <div id="skin_preview">
+                    <div id="skin1" class="p1" height="120" src="img/skins/835_2.jpg">
+                    </div>
+                    <div id="skin2" class="p2" height="60" src="img/skins/836_2.jpg" ></div>
+                    <div id="skin3" class="p2" height="60" src="img/skins/837_2.jpg"></div>
+                    <div id="skin4" class="p2" height="60" src="img/skins/838_2.jpg"></div>
+                    <div id="skin5" class="p2" height="60" src="img/skins/839_2.jpg"></div>
+                    <div id="skin6" class="p2" height="60" src="img/skins/840_2.jpg"></div>
+                    <div id="skin7" class="p2" height="60" src="img/skins/841_2.jpg"></div>
+                    <div id="skin8" class="p2" height="60" src="img/skins/842_2.jpg"></div>
+                    <div id="skin9" class="p1" height="120" src="img/skins/843.jpg"></div>
+                    <div id="skin10" class="p2" height="60" src="img/skins/844.jpg"></div>
+                    <div id="skin11" class="p2" height="60" src="img/skins/845.jpg"></div>
+                    <div id="skin12" class="p2" height="60" src="img/skins/846.jpg"></div>
+                    <div id="small_preview">
+                        <img src="img/skins/skin_preview_05c7c9e3.png" />
+                    </div>
+                    <div id="miaoshu">背景皮肤效果预览</div>
+                </div>
+                <script>
+                    $("#skin_preview>div:not('#small_preview')").mouseover(function () {
+                        $("#small_preview").css("background-image", "url('../" + $(this).attr("src") + "')");
+                        
+                    });
+                    $("#skin_preview>div:not('#small_preview')").click(function () {
+                        $("#skin_preview>div:not('#small_preview')").each(function () {
+                            $(this).html("");
+                        });
+                        $(this).html("<img src=\"img/skins/1.png\" style=\"position:absolute;right:3px;bottom:3px;\" />");
+                        $("body").css("background-image", "url('../" + $(this).attr("src") + "')");
+                        var src = $(this).attr("src");
+                        localStorage.skinsrc = src;
+                    });
+                </script>
+            </div>
+            <a href="#">糯米</a>
+            <a href="#">新闻</a>
+            <a href="#">hao123</a>
+            <a href="#">地图</a>
+            <a href="#">视频</a>
+            <a href="#">贴吧</a>
+            <a href="#" style="font-weight:normal;">登陆</a>
+            <a href="#" style="font-weight:normal;">设置</a>
+            <a href="#" style="background:#38f;color:white;padding:5px;text-decoration:none;position:relative;" class="morebtn">
+                更多产品
+                <div class="more">
+                    <!--时间不足,更多产品悬停显示的部分用图片代替-->
+                    <img src="img/more.png" />
+                </div>
+            </a>
+        </nav>
+        <div style="clear:both;"></div>
+        <article style="text-align:center;margin-top:50px;">
+            <img width="270" height="129" src="http://www.baidu.com/img/bd_logo1.png">
+            <form>
+                <div style="text-align:center;margin-top:30px;">
+                    <span style="position:relative;">
+                        <!--图片搜索的小图片相对搜索框定位-->
+                        <span class="photosearch"></span>
+                        <input type="text" class="searchcon" /><input type="submit" id="sub" value="百度一下" />
+                    </span>
+                </div>
+            </form>
+            <div class="content">
+                <div class="navbar">
+                    <div class="wodeguanzhu_btn">
+                        <div class="manimg"></div>
+                        我的关注
+                    </div>
+                    <div class="tuijian_btn active">推荐</div>
+                    <div class="daohang_btn">导航</div>
+                    <div class="shiping_btn">视频</div>
+                    <!--<div class="gouwu_btn">购物</div>-->
+                    <span class="setting"></span>
+                </div>
+                <div class="newsandhot">
+                    <div class="wodeguanzhu" style="display:none;">
+                        <div class="wodedaohang" style="color:black;font-weight:bold;padding:10px 0;text-align:left;">
+                            <div class="wodedaohang_icon">
+
+                            </div>
+                            我的导航<span style="color:#666;">(20)</span>
+                        </div>
+                        <div class="wodedaohang_content">
+                            <div class="lefttitle">综合</div>
+                            <div class="rightcontent">
+                                <div><img src="img/baidupcwodeguanzhu/未标题-1_07.gif" />acfun</div>
+                                <div><img src="img/baidupcwodeguanzhu/未标题-1_09.gif" />baidu</div>
+                                <div><img src="img/baidupcwodeguanzhu/未标题-1_11.gif" />CC动漫</div>
+                                <div><img src="img/baidupcwodeguanzhu/未标题-1_13.gif" />bilibili</div>
+                                <div><img src="img/baidupcwodeguanzhu/未标题-1_16.gif" />多玩</div>
+                                <div><img src="img/baidupcwodeguanzhu/未标题-1_17.gif" />365</div>
+                                <div><img src="img/baidupcwodeguanzhu/未标题-1_21.png" />178</div>
+                                <div><img src="img/baidupcwodeguanzhu/未标题-1_26.gif" />贴吧</div>
+                                <div><img src="img/baidupcwodeguanzhu/未标题-1_28.gif" />网易</div>
+                                <div><img src="img/baidupcwodeguanzhu/未标题-1_29.gif" />游侠网</div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="wodedaohang_content">
+                            <div class="lefttitle">贴吧</div>
+                            <div class="rightcontent">
+                                <div><img src="img/baidupcwodeguanzhu/未标题-1_07.gif" />acfun</div>
+                                <div><img src="img/baidupcwodeguanzhu/未标题-1_26.gif" />贴吧</div>
+                                <div><img src="img/baidupcwodeguanzhu/未标题-1_26.gif" />贴吧</div>
+                                <div><img src="img/baidupcwodeguanzhu/未标题-1_26.gif" />贴吧</div>
+                                <div><img src="img/baidupcwodeguanzhu/未标题-1_09.gif" />baidu</div>
+                                <div><img src="img/baidupcwodeguanzhu/未标题-1_11.gif" />CC动漫</div>
+                                <div><img src="img/baidupcwodeguanzhu/未标题-1_26.gif" />贴吧</div>
+                                <div><img src="img/baidupcwodeguanzhu/未标题-1_13.gif" />bilibili</div>
+                                <div><img src="img/baidupcwodeguanzhu/未标题-1_26.gif" />贴吧</div>
+                                <div><img src="img/baidupcwodeguanzhu/未标题-1_26.gif" />贴吧</div>
+                                <div><img src="img/baidupcwodeguanzhu/未标题-1_16.gif" />多玩</div>
+                                <div><img src="img/baidupcwodeguanzhu/未标题-1_17.gif" />365</div>
+                                <div><img src="img/baidupcwodeguanzhu/未标题-1_21.png" />178</div>
+                                <div><img src="img/baidupcwodeguanzhu/未标题-1_26.gif" />贴吧</div>
+                                <div><img src="img/baidupcwodeguanzhu/未标题-1_26.gif" />贴吧</div>
+                                <div><img src="img/baidupcwodeguanzhu/未标题-1_26.gif" />贴吧</div>
+                                <div><img src="img/baidupcwodeguanzhu/未标题-1_28.gif" />网易</div>
+                                <div><img src="img/baidupcwodeguanzhu/未标题-1_29.gif" />游侠网</div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="wodedaohang_content">
+                            <div class="lefttitle">社区</div>
+                            <div class="rightcontent">
+                                <div><img src="img/baidupcwodeguanzhu/未标题-1_28.gif" />网易</div>
+                                <div><img src="img/baidupcwodeguanzhu/未标题-1_29.gif" />游侠网</div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="tuijian">
+                        <div class="tuijian_left">
+                            <div>
+                                <div style="height:8px;width:33%;float:left;border-bottom:1px solid #EDEDED;"></div>
+                                <div style="width:33%;float:left;font-size:13px;color:rgba(0, 0, 0, 0.4);">
+                                    <img src="img/tuijian/未标题-1_03.png" />
+                                    以下信息根据您的兴趣推荐
+                                </div>
+                                <div style="height:8px;width:33%;float:left;border-bottom:1px solid #EDEDED;"></div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="newscon">
+                                <div style="float:left;width:40%;">
+                                    <img src="img/tuijian/未标题-1_10.png" />
+                                </div>
+                                <div style="float:left;width:60%;" class="newsdetail">
+                                    <div class="newstitle">荣耀战魂内测P2P方式对战匹配玩家</div>
+                                    <div class="newsresource">人民网 12-23 10:23<span></span></div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="newscon">
+                                <div style="float:left;width:40%;">
+                                    <img src="img/tuijian/未标题-1_16.png" />
+                                </div>
+                                <div style="float:left;width:60%;" class="newsdetail">
+                                    <div class="newstitle">于谦偶像就该酱婶曝德云社红人病4</div>
+                                    <div class="newsresource">人民网 12-23 10:23<span></span></div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="tuijian_right">
+                            <div style="height:30px;">
+                                <span style="float:left;font-size:16px;font-weight:700;padding-left:3px;">时事热点</span>
+                                <span style="float:right;cursor:pointer;" class="change">换一换</span>
+                                <span style="float:right;cursor:pointer;" class="change"><img src="img/tuijian/未标题-1_05.png" /></span>
+                                <div class="clear;"></div>
+                            </div>
+                            <div class="tuijiancontent">
+                                <div class="shishiredian">
+                                    僵尸车被塞进假人
+                                    <img style="position:relative;top:3px;" src="img/tuijian/未标题-1_12.png" />
+                                </div>
+                                <div class="shishiredian">女子买衣欠款6万</div>
+                                <div class="shishiredian">小学生群卖黄片</div>
+                                <div class="shishiredian">大雁塔拍裸体写真</div>
+                                <div class="shishiredian">20亿年最古老水</div>
+                                <div class="shishiredian">僵尸车被塞进假人</div>
+                                <div class="shishiredian">僵尸车被塞进假人</div>
+                                <div class="shishiredian">女子买衣欠款6万</div>
+                                <div class="shishiredian">小学生群卖黄片</div>
+                                <div class="shishiredian">大雁塔拍裸体写真</div>
+                                <div class="shishiredian">20亿年最古老水</div>
+                                <div class="shishiredian">僵尸车被塞进假人</div>
+                                <div class="shishiredian">女子买衣欠款6万</div>
+                                <div class="shishiredian">小学生群卖黄片</div>
+                                <div class="shishiredian">大雁塔拍裸体写真</div>
+                                <div class="shishiredian">20亿年最古老水</div>
+                                <div class="clear;"></div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="daohang">
+                        <div class="daohangtitle">猜你喜欢</div>
+                        <div>
+                            <div class="idaohang_items">
+                                <div>
+                                    <img class="daohang_icon" src="img/daohang/未标题-1_07.png" />
+                                    百度糯米
+                                    <img class="fanli" src="img/daohang/未标题-1_03.png" />
+                                </div>
+                                <div class="fanli_detail">
+                                    最高返利50.00%
+                                </div>
+                            </div>
+                            <div class="idaohang_items">
+                                <div>
+                                    <img class="daohang_icon" src="img/daohang/未标题-1_10.png" />
+                                    京东商城
+                                    <img class="fanli" src="img/daohang/未标题-1_03.png" />
+                                </div>
+                                <div class="fanli_detail">
+                                    最高返利50.00%
+                                </div>
+                            </div>
+                            <div class="idaohang_items">
+                                <div>
+                                    <img class="daohang_icon" src="img/daohang/未标题-1_12.png" />
+                                    1号店
+                                    <img class="fanli" src="img/daohang/未标题-1_03.png" />
+                                </div>
+                                <div class="fanli_detail">
+                                    最高返利50.00%
+                                </div>
+                            </div>
+                            <div class="idaohang_items">
+                                <div>
+                                    <img class="daohang_icon" src="img/daohang/未标题-1_14.png" />
+                                    苏宁易购
+                                    <img class="fanli" src="img/daohang/未标题-1_03.png" />
+                                </div>
+                                <div class="fanli_detail">
+                                    最高返利50.00%
+                                </div>
+                            </div>
+                            <div class="idaohang_items">
+                                <div>
+                                    <img class="daohang_icon" src="img/daohang/未标题-1_16.png" />
+                                    唯品会
+                                    <img class="fanli" src="img/daohang/未标题-1_03.png" />
+                                </div>
+                                <div class="fanli_detail">
+                                    最高返利50.00%
+                                </div>
+                            </div>
+                            <div class="idaohang_items">
+                                <div>
+                                    <img class="daohang_icon" src="img/daohang/未标题-1_18.png" />
+                                    当当网
+                                    <img class="fanli" src="img/daohang/未标题-1_03.png" />
+                                </div>
+                                <div class="fanli_detail">
+                                    最高返利50.00%
+                                </div>
+                            </div>
+                            <div class="idaohang_items">
+                                <div>
+                                    <img class="daohang_icon" src="img/daohang/未标题-1_07.png" />
+                                    百度糯米
+                                    <img class="fanli" src="img/daohang/未标题-1_03.png" />
+                                </div>
+                                <div class="fanli_detail">
+                                    最高返利50.00%
+                                </div>
+                            </div>
+                            <div class="idaohang_items">
+                                <div>
+                                    <img class="daohang_icon" src="img/daohang/未标题-1_07.png" />
+                                    百度糯米
+                                    <img class="fanli" src="img/daohang/未标题-1_03.png" />
+                                </div>
+                                <div class="fanli_detail">
+                                    最高返利50.00%
+                                </div>
+                            </div>
+                            <div class="idaohang_items">
+                                <div>
+                                    <img class="daohang_icon" src="img/daohang/未标题-1_07.png" />
+                                    百度糯米
+                                    <img class="fanli" src="img/daohang/未标题-1_03.png" />
+                                </div>
+                                <div class="fanli_detail">
+                                    最高返利50.00%
+                                </div>
+                            </div>
+                            <div class="idaohang_items">
+                                <div>
+                                    <img class="daohang_icon" src="img/daohang/未标题-1_07.png" />
+                                    百度糯米
+                                    <img class="fanli" src="img/daohang/未标题-1_03.png" />
+                                </div>
+                                <div class="fanli_detail">
+                                    最高返利50.00%
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="shiping">
+                        <div class="grid">
+                            <div class="grid-item">
+                                <img src="img/shiping/未标题-4_03.png" />
+                            </div>
+                            <div class="grid-item grid-item--width2">
+                                <img src="img/shiping/未标题-4_05.png" />
+                            </div>
+                            <div class="grid-item">
+                                <img src="img/shiping/未标题-4_07.png" />
+                            </div>
+                            <div class="grid-item">
+                                <img src="img/shiping/未标题-4_09.png" />
+                            </div>
+                            <div class="grid-item grid-item--width2">
+                                <img src="img/shiping/未标题-4_13.png" />
+                            </div>
+                            <div class="grid-item">
+                                <img src="img/shiping/未标题-4_14.png" />
+                            </div>
+                            <div class="grid-item">
+                                <img src="img/shiping/未标题-4_19.png" />
+                            </div>
+                            <div class="grid-item grid-item--width2">
+                                <img src="img/shiping/未标题-4_20.png" />
+                            </div>
+                            <div class="grid-item">
+                                <img src="img/shiping/未标题-4_21.png" />
+                            </div>
+                            <div class="grid-item">
+                                <img src="img/shiping/未标题-4_22.png" />
+                            </div>
+                            <div class="grid-item grid-item--width2">
+                                <img src="img/shiping/未标题-4_26.png" />
+                            </div>
+                            <div class="grid-item">
+                                <img src="img/shiping/未标题-4_27.png" />
+                            </div>
+                            <div class="grid-item">
+                                <img src="img/shiping/未标题-4_28.png" />
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                        <button id="test">test</button>
+
+                    </div>
+                    <script>
+                        $('.grid').masonry({
+                            // options
+                            itemSelector: '.grid-item',
+                            columnWidth: 214.5,
+                        });
+                        $("#test").click(function () {
+                            var $items = $('<div class="grid-item"><img src="img/shiping/未标题-4_28.png" /></div>');
+                            // append items to grid
+                            $('.grid').append($items)
+                              // add and lay out newly appended items
+                              .masonry('appended', $items);
+
+                        });
+                    </script>
+
+                    <div class="gouwu">
+
+                    </div>
+                </div>
+            </div>
+        </article>
+        
+
+        <!--绝对定位到底部,但不能挡住搜索栏-->
+        <footer>
+            <img style="float:left;" src="img/shoujibaidu.png" />
+            <div style="float:left;margin-left:10px;padding-top:8px;">
+                <p style="color:#666;"><b>手机百度</b></p>
+                <p style="color:#999;">快人一步</p>
+            </div>
+            <img style="float:left;margin-left:40px;" src="img/baidunuomi.png" />
+            <div style="float:left;margin-left:10px;padding-top:8px;">
+                <p style="color:#666;"><b>百度糯米</b></p>
+                <p style="color:#999;">一元大餐</p>
+            </div>
+            <div style="float:left;line-height:22px;color:#999;margin-left:40px;" class="info">
+                <p>
+                    <a href="#">把百度设为主页</a>
+                    <a href="#" style="margin-left:40px;">关于百度</a>
+                    <a href="#" style="margin-left:40px;">About Baidu</a>
+                </p>
+                <p>©2016 Baidu 使用百度前必读 意见反馈 京ICP证030173号</p>
+                <p>
+                    <img src="img/police.png" />
+                    京公网安备11000002000001号
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+    <div class="mobile">
+        <div>
+            <img src="img/images/百度一下_03.jpg" />
+        </div>
+        <div class="logo">
+            <img src="img/images/百度一下_10.jpg" />
+        </div>
+        <div class="inputdiv">
+            <input type="text" class="mobilesearchcon" /><input class="mobilesub" type="button" value="百度一下" />
+        </div>
+        <div class="btns">
+            <a href="#"><div><img src="img/images/百度一下_14.jpg" /></div>新闻</a>
+            <a href="#"><div><img src="img/images/百度一下_16.jpg" /></div>新闻</a>
+            <a href="#"><div><img src="img/images/百度一下_19.jpg" /></div>新闻</a>
+            <a href="#"><div><img src="img/images/百度一下_21.jpg" /></div>新闻</a>
+            <a href="#"><div><img src="img/images/百度一下_23.jpg" /></div>新闻</a>
+            <a href="#"><div><img src="img/images/百度一下_25.jpg" /></div>新闻</a>
+        </div>
+        <div class="blocks">
+            <div class="blocktitle" style="float:left;line-height:38px;">常用网址</div>
+            <img style="float:right;" src="img/images/edit.jpg" />
+            <div style="clear:both;"></div>
+            <div class="webs">
+                <div>上海天气</div>
+                <div>图片</div>
+                <div>爱奇艺</div>
+                <div>资讯</div>
+                <div>音乐</div>
+                <div>优酷</div>
+                <div>hao123</div>
+                <div>土豆</div>
+            </div>
+        </div>
+        <div class="blocks">
+            <div class="blocktitle" style="float:left;line-height:38px;">常用网址</div>
+            <img style="float:right;margin-top:3px;" src="img/images/edit.jpg" />
+            <div style="float:right;line-height:38px;padding-left: 10px;color: #262626;font-size: 14px;">换一批</div>
+            <img style="float:right;margin-top:9px;" src="img/images/re.jpg" />
+            <div style="clear:both;"></div>
+            <div class="webs news">
+                <div>两辆公交斗气互撞</div>
+                <div>呆萌萝莉喂食山羊</div>
+                <div>3万网购空盒子</div>
+                <div>女学霸倒追小伙</div>
+                <div>巴西鱼居然讨酒喝</div>
+                <div>王凯胡歌抢视帝</div>
+            </div>
+            <div class="fyb">
+                <a href="#">百度风云榜></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

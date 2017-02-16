@@ -1,0 +1,91 @@
+﻿*{
+    margin:0;
+    padding:0;
+}
+.chilun{
+    margin:100px auto;
+    -webkit-animation: xuanzhuan 3s infinite linear;
+    animation: xuanzhuan 3s infinite linear;
+    background-color:gray;
+    position:relative;
+    left:0px;
+    top:0px;
+    height: 60px;
+    width: 60px;
+    box-sizing: border-box;
+    border:1px solid gray;
+    border-radius: 50%;
+}
+.chilun2{
+    margin:100px auto;
+    background-color:gray;
+    position:relative;
+    left: -18px;
+    top: -95px;
+    height: 60px;
+    width: 60px;
+    box-sizing: border-box;
+    border:1px solid gray;
+    border-radius: 50%;
+    -webkit-animation: xuanzhuan2 3s infinite linear;
+    animation: xuanzhuan2 3s infinite linear;
+
+    -webkit-transform:scale(2);/*问题:为什么这里的缩放会失效?*/
+    transform:scale(2);
+}
+.bar1,.bar2,.bar3{
+    /*3根棒子组成齿*/
+    height: 16px;
+    width: 76px;
+    left: -9px;
+    top: 21px;
+    position: absolute;
+    background-color: gray;
+    border:1px solid gray;
+    box-sizing: border-box;
+}
+.bar2{
+    /*旋转60度*/
+    transform:rotate(-60deg);
+}
+.bar3{
+    transform:rotate(60deg);
+}
+/*定义动画*/
+@-webkit-keyframes xuanzhuan {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+@keyframes xuanzhuan {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@-webkit-keyframes xuanzhuan2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes xuanzhuan2 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,114 @@
+﻿.cl:after,.cl:before{
+    clear:both;
+    display:block;
+    content:"";
+}
+html{
+    font-size:62.5%;/*可以直接写10px吗? */
+    font-family:Arial;
+    height:100%;
+}
+body{
+    height:100%;
+}
+header {
+    height: 4.8rem;
+    background: #3e98f0 no-repeat center center ;
+    background-size:5rem;
+    background-image: url('../img/bg-news-logo_344ce44.png');
+    border-bottom:1px solid #5dabf0;
+}
+header>a:nth-child(1),
+header>a:nth-child(2){
+    float:left;
+}
+header>a:nth-child(3),
+header>a:nth-child(4){
+    float:right;
+}
+header a{
+    color:#fff;
+    width:3rem;
+    height:4.8rem;
+    line-height:4.8rem;
+    text-align:center;
+}
+article{
+    text-align:center;
+}
+header .iconfont{
+    font-size:2rem;
+}
+nav{
+    background:#3e98f0;
+}
+nav ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+nav ul li{
+    color:#fff;
+    float:left;
+    width:16.6%;
+    font-size:1.4rem;
+    height:3rem;
+    line-height:3rem;
+}
+nav ul li i{
+    display:inline-block;
+    height:2rem;
+    float:right;
+    border-right:1px solid #5dabf0;
+    position:relative;
+    top:0.5rem;
+}
+.pic{
+    width:33%;
+    float:left;height:7rem;
+}
+.pic>img{
+    width:100%;
+    height:100%;
+}
+.detail{
+    float:left;
+    width:66%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    height:7rem;
+    padding:1rem;
+    box-sizing:border-box;
+}
+.detail>div{
+    display:flex;
+}
+.title{
+    
+    text-align:left;
+}
+.itemlist{
+    padding:1rem;
+}
+.title{
+    color:#333;
+    font-size:1.8rem;
+}
+.time{
+    color: #999;
+    line-height:1.3rem;
+    font-size:1.3rem;
+}
+.describe{
+    margin-top:0.6rem;
+}
+.src{
+    border: 1px solid #efb9b9;
+    color: #ef3f41;
+    margin-left:0.6rem;
+}
+.news_item{
+    margin-bottom:1rem;
+}

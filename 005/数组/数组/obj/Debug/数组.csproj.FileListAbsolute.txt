@@ -1,0 +1,6 @@
+C:\Users\hercules\Desktop\极客学院作业\005\数组\数组\bin\数组.dll.config
+C:\Users\hercules\Desktop\极客学院作业\005\数组\数组\bin\数组.dll
+C:\Users\hercules\Desktop\极客学院作业\005\数组\数组\bin\数组.pdb
+C:\Users\hercules\Desktop\极客学院作业\005\数组\数组\obj\Debug\数组.dll
+C:\Users\hercules\Desktop\极客学院作业\005\数组\数组\obj\Debug\数组.pdb
+C:\Users\hercules\Desktop\极客学院作业\005\数组\数组\obj\Debug\数组.csprojResolveAssemblyReference.cache

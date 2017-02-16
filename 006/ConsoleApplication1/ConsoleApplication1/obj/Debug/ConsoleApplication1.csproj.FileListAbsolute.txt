@@ -1,0 +1,7 @@
+C:\Users\hercules\Desktop\极客学院作业\006\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\hercules\Desktop\极客学院作业\006\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\hercules\Desktop\极客学院作业\006\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\hercules\Desktop\极客学院作业\006\ConsoleApplication1\ConsoleApplication1\bin\Debug\BilibiliDM_PluginFramework.dll
+C:\Users\hercules\Desktop\极客学院作业\006\ConsoleApplication1\ConsoleApplication1\bin\Debug\BilibiliDM_PluginFramework.xml
+C:\Users\hercules\Desktop\极客学院作业\006\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\Users\hercules\Desktop\极客学院作业\006\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb

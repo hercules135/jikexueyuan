@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+</head>
+<body style="text-align:center;margin-top:200px;">
+    <h2>将0~100分学员以10分为界，分为十段，然后计算出该生为数字几等生</h2>
+    请输入分数0~100<input type="number" value="1" placeholder="95" min="0" max="100" step="1" id="score"/><br /><br />
+    <button type="button" onclick="checklevel()">显示级别</button>
+</body>
+</html>
+<script>
+    var checklevel = function () {
+        
+        var a = document.getElementById("score").value;
+        if (a < 0 || a > 100) {
+            alert("数据异常，请输入正确号码");
+            return;
+        }
+        var testscore = 90;
+        var level = 1;
+        while (true) {
+            if (a>=testscore) {
+                alert("该学生是" + level + "级");
+                return;
+            }
+            else {
+                testscore -= 10;
+                level += 1;
+            }
+        }
+    }
+</script>

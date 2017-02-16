@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>后台登陆</title>
+    <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="panel panel-primary" style="width:330px;height:250px;margin:200px auto;text-align:center;">
+            <div class="panel-heading">
+                <h3 class="panel-title">后台管理页面</h3>
+            </div>
+            <div class="panel-body">
+                <form role="form" action="index.html">
+                    <div class="input-group" style="padding:10px;">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input type="text" name="username" class="form-control" placeholder="用户名"><!--required属性 html5可以验证表单-->
+                    </div>
+                    <div class="input-group" style="padding:10px;">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                        <input type="password" name="password" class="form-control" placeholder="密码">
+                    </div>
+                    <div id="geetest-container" style="margin-left:5px;">
+
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="margin-top:20px;"> 登录 </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script src="http://static.geetest.com/static/tools/gt.js"></script>
+
+<script>
+    window.addEventListener('load', processGeeTest);
+
+    function processGeeTest() {
+        $.ajax({
+            // 获取id，challenge，success（是否启用failback）
+            url: "http://www.shwdztc.com/GeeTest/GeekTest",
+            type: "get",
+            dataType: "json", // 使用jsonp格式
+            success: function (data) {
+                // 使用initGeetest接口
+                // 参数1：配置参数，与创建Geetest实例时接受的参数一致
+                // 参数2：回调，回调的第一个参数验证码对象，之后可以使用它做appendTo之类的事件
+                initGeetest({
+                    gt: data.gt,
+                    challenge: data.challenge,
+                    product: "float", // 产品形式
+                    offline: !data.success
+                }, handler);
+            }
+        });
+    }
+
+    var handler = function (captchaObj) {
+        // 将验证码加到id为captcha的元素里
+        captchaObj.appendTo("#geetest-container");
+
+        captchaObj.onSuccess = function (e) {
+            console.log(e);
+        }
+
+    };
+</script>

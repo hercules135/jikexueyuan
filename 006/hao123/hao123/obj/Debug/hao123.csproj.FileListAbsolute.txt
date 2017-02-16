@@ -1,0 +1,6 @@
+C:\Users\hercules\Desktop\极客学院作业\006\hao123\hao123\bin\hao123.dll.config
+C:\Users\hercules\Desktop\极客学院作业\006\hao123\hao123\bin\hao123.dll
+C:\Users\hercules\Desktop\极客学院作业\006\hao123\hao123\bin\hao123.pdb
+C:\Users\hercules\Desktop\极客学院作业\006\hao123\hao123\obj\Debug\hao123.csprojResolveAssemblyReference.cache
+C:\Users\hercules\Desktop\极客学院作业\006\hao123\hao123\obj\Debug\hao123.dll
+C:\Users\hercules\Desktop\极客学院作业\006\hao123\hao123\obj\Debug\hao123.pdb

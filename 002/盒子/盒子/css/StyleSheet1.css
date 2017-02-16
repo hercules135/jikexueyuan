@@ -1,0 +1,85 @@
+﻿*{
+    margin:0;
+    padding:0;
+}
+#box1{
+    width:200px;
+    height:200px;
+    margin:10px;
+    border:5px solid red;
+    padding:10px;
+    background:orange;
+    overflow:auto;
+}
+#box2{
+    box-sizing:border-box;/*padding-box*/
+    width:200px;
+    height:200px;
+    margin:10px;
+    border:5px  solid red;
+    padding:10px;
+    background:orange;
+}
+.box3{
+    -moz-columns:200px;
+	-webkit-columns:200px;
+	columns:200px;
+    -moz-column-rule-style:double;
+	-webkit-column-rule-style:double;
+    column-rule-style:double;
+}
+.box4{
+    -moz-column-count:2;
+	-webkit-column-count:2;
+	column-count:2;
+    -moz-column-rule-style:groove;
+	-webkit-column-rule-style:groove;
+    column-rule-style:groove;
+}
+.flexcon{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-flex-flow: column;
+    flex-flow: column;
+    width:300px;
+    height:200px;
+}
+.flexcon div{
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+}
+.flexcon2{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient:horizontal;
+    -webkit-flex-flow: row wrap-reverse;
+    flex-flow: row wrap-reverse;
+    width:300px;
+    height:200px;
+}
+.flexcon2 div{
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+}
+.red{
+    background:#ff0000;
+}
+.blue{
+    background:#0094ff;
+}
+.orange{
+    background:orange;
+}
+
+.box5{
+    display:-webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+    width:500px;height:500px;
+    background:orange;
+}

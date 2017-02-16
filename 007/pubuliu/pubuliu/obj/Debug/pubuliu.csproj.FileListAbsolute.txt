@@ -1,0 +1,6 @@
+C:\Users\hercules\Desktop\极客学院作业\007\pubuliu\pubuliu\bin\pubuliu.dll.config
+C:\Users\hercules\Desktop\极客学院作业\007\pubuliu\pubuliu\bin\pubuliu.dll
+C:\Users\hercules\Desktop\极客学院作业\007\pubuliu\pubuliu\bin\pubuliu.pdb
+C:\Users\hercules\Desktop\极客学院作业\007\pubuliu\pubuliu\obj\Debug\pubuliu.csprojResolveAssemblyReference.cache
+C:\Users\hercules\Desktop\极客学院作业\007\pubuliu\pubuliu\obj\Debug\pubuliu.dll
+C:\Users\hercules\Desktop\极客学院作业\007\pubuliu\pubuliu\obj\Debug\pubuliu.pdb

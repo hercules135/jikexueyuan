@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4007A49C-E5A4-4C65-BD3A-699895A2779A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>baidu</RootNamespace>
+    <AssemblyName>baidu</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="baidu.html" />
+    <Content Include="css\StyleSheet1.css" />
+    <Content Include="img\daohang\未标题-1_03.png" />
+    <Content Include="img\daohang\未标题-1_07.png" />
+    <Content Include="img\daohang\未标题-1_10.png" />
+    <Content Include="img\daohang\未标题-1_12.png" />
+    <Content Include="img\daohang\未标题-1_14.png" />
+    <Content Include="img\daohang\未标题-1_16.png" />
+    <Content Include="img\daohang\未标题-1_18.png" />
+    <Content Include="img\shiping\未标题-4_03.png" />
+    <Content Include="img\shiping\未标题-4_05.png" />
+    <Content Include="img\shiping\未标题-4_07.png" />
+    <Content Include="img\shiping\未标题-4_09.png" />
+    <Content Include="img\shiping\未标题-4_13.png" />
+    <Content Include="img\shiping\未标题-4_14.png" />
+    <Content Include="img\shiping\未标题-4_19.png" />
+    <Content Include="img\shiping\未标题-4_20.png" />
+    <Content Include="img\shiping\未标题-4_21.png" />
+    <Content Include="img\shiping\未标题-4_22.png" />
+    <Content Include="img\shiping\未标题-4_26.png" />
+    <Content Include="img\shiping\未标题-4_27.png" />
+    <Content Include="img\shiping\未标题-4_28.png" />
+    <Content Include="img\skins\835_2.jpg" />
+    <Content Include="img\skins\836_2.jpg" />
+    <Content Include="img\skins\837_2.jpg" />
+    <Content Include="img\skins\838_2.jpg" />
+    <Content Include="img\skins\839_2.jpg" />
+    <Content Include="img\skins\840_2.jpg" />
+    <Content Include="img\skins\841_2.jpg" />
+    <Content Include="img\skins\842_2.jpg" />
+    <Content Include="img\skins\843.jpg" />
+    <Content Include="img\skins\844.jpg" />
+    <Content Include="img\skins\845.jpg" />
+    <Content Include="img\skins\846.jpg" />
+    <Content Include="img\skins\1.png" />
+    <Content Include="img\skins\skin_preview_05c7c9e3.png" />
+    <Content Include="js\masonry.pkgd.min.js" />
+    <Content Include="js\weather.js" />
+    <Content Include="test.html" />
+    <Content Include="img\baidupcwodeguanzhu\未标题-1_03.gif" />
+    <Content Include="img\baidupcwodeguanzhu\未标题-1_03.png" />
+    <Content Include="img\baidupcwodeguanzhu\未标题-1_07.gif" />
+    <Content Include="img\baidupcwodeguanzhu\未标题-1_09.gif" />
+    <Content Include="img\baidupcwodeguanzhu\未标题-1_11.gif" />
+    <Content Include="img\baidupcwodeguanzhu\未标题-1_13.gif" />
+    <Content Include="img\baidupcwodeguanzhu\未标题-1_16.gif" />
+    <Content Include="img\baidupcwodeguanzhu\未标题-1_17.gif" />
+    <Content Include="img\baidupcwodeguanzhu\未标题-1_21.png" />
+    <Content Include="img\baidupcwodeguanzhu\未标题-1_26.gif" />
+    <Content Include="img\baidupcwodeguanzhu\未标题-1_28.gif" />
+    <Content Include="img\baidupcwodeguanzhu\未标题-1_29.gif" />
+    <Content Include="img\baidupcwodeguanzhu\未标题-1_32.gif" />
+    <Content Include="img\baidupcwodeguanzhu\未标题-1_33.gif" />
+    <Content Include="img\baidupcwodeguanzhu\未标题-1_35.gif" />
+    <Content Include="img\blue.png" />
+    <Content Include="img\card_setts_fdb17359.png" />
+    <Content Include="img\gray.png" />
+    <Content Include="img\images\re.jpg" />
+    <Content Include="img\images\edit.jpg" />
+    <Content Include="img\images\百度一下_03.jpg" />
+    <Content Include="img\images\百度一下_06.jpg" />
+    <Content Include="img\images\百度一下_10.jpg" />
+    <Content Include="img\images\百度一下_14.jpg" />
+    <Content Include="img\images\百度一下_16.jpg" />
+    <Content Include="img\images\百度一下_19.jpg" />
+    <Content Include="img\images\百度一下_21.jpg" />
+    <Content Include="img\images\百度一下_23.jpg" />
+    <Content Include="img\images\百度一下_25.jpg" />
+    <Content Include="img\images\百度一下_33.jpg" />
+    <Content Include="img\images\百度一下_36.jpg" />
+    <Content Include="img\images\百度一下_38.jpg" />
+    <Content Include="img\images\百度一下_40.jpg" />
+    <Content Include="img\images\百度一下_42.jpg" />
+    <Content Include="img\images\百度一下_44.jpg" />
+    <Content Include="img\images\百度一下_47.jpg" />
+    <Content Include="img\images\百度一下_49.jpg" />
+    <Content Include="img\police.png" />
+    <Content Include="img\more.png" />
+    <Content Include="img\baidunuomi.png" />
+    <Content Include="img\shoujibaidu.png" />
+    <Content Include="img\tuijian\未标题-1_03.png" />
+    <Content Include="img\tuijian\未标题-1_05.png" />
+    <Content Include="img\tuijian\未标题-1_10.png" />
+    <Content Include="img\tuijian\未标题-1_12.png" />
+    <Content Include="img\tuijian\未标题-1_16.png" />
+    <Content Include="js\html5.js" />
+    <Content Include="js\PC.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>24215</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:24215/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

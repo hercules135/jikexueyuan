@@ -1,0 +1,6 @@
+D:\MAMP\htdocs\baidunews\baidunews\bin\baidunews.dll.config
+D:\MAMP\htdocs\baidunews\baidunews\bin\baidunews.dll
+D:\MAMP\htdocs\baidunews\baidunews\bin\baidunews.pdb
+D:\MAMP\htdocs\baidunews\baidunews\obj\Debug\baidunews.csprojResolveAssemblyReference.cache
+D:\MAMP\htdocs\baidunews\baidunews\obj\Debug\baidunews.dll
+D:\MAMP\htdocs\baidunews\baidunews\obj\Debug\baidunews.pdb

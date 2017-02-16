@@ -1,0 +1,12 @@
+C:\Users\hercules\Desktop\极客学院作业\第二次\盒子\盒子\bin\盒子.dll.config
+C:\Users\hercules\Desktop\极客学院作业\第二次\盒子\盒子\bin\盒子.dll
+C:\Users\hercules\Desktop\极客学院作业\第二次\盒子\盒子\bin\盒子.pdb
+C:\Users\hercules\Desktop\极客学院作业\第二次\盒子\盒子\obj\Debug\盒子.csprojResolveAssemblyReference.cache
+C:\Users\hercules\Desktop\极客学院作业\第二次\盒子\盒子\obj\Debug\盒子.dll
+C:\Users\hercules\Desktop\极客学院作业\第二次\盒子\盒子\obj\Debug\盒子.pdb
+C:\Users\hercules\Desktop\极客学院作业\02\盒子\盒子\bin\盒子.dll.config
+C:\Users\hercules\Desktop\极客学院作业\02\盒子\盒子\bin\盒子.dll
+C:\Users\hercules\Desktop\极客学院作业\02\盒子\盒子\bin\盒子.pdb
+C:\Users\hercules\Desktop\极客学院作业\02\盒子\盒子\obj\Debug\盒子.csprojResolveAssemblyReference.cache
+C:\Users\hercules\Desktop\极客学院作业\02\盒子\盒子\obj\Debug\盒子.dll
+C:\Users\hercules\Desktop\极客学院作业\02\盒子\盒子\obj\Debug\盒子.pdb

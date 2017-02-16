@@ -1,0 +1,258 @@
+﻿body,html{
+    height:100%;
+    margin:0;padding:0;
+}
+body{
+    min-height:600px;
+    /*配合footer的绝对定位,保证屏幕高低过低时,底部不会挡住搜索栏*/
+    position:relative;
+}
+* body{
+    /*
+    首先不支持绝对路径，只支持相对路径。
+    其次，是相对于当前html网页的相对路径，和CSS文件的位置无关。 
+    */
+    behavior: url(../css/hover.htc); /*可在IE6,7中对非<a>元素使用hover等伪类*/
+}
+nav {
+    padding:10px;
+    text-align: right;
+}
+nav a {
+    font-weight: bold;
+    font-size: 13px;
+    text-decoration: underline;
+    margin-left: 15px;
+}
+.more{
+    display:none;
+    overflow:auto;
+    position:absolute;
+    top:-18px;
+    right:0;
+}
+.morebtn:hover .more{
+    display:block;
+}
+nav a{
+    color:black;
+}
+nav a:hover {
+    color: #00c;
+    cursor: pointer;
+}
+.searchcon{
+    border:1px solid #999;
+    width:500px;height:34px;padding:0 10px;
+    outline:none;
+    /*outline去除*/
+}
+.searchcon:hover{
+    border:1px solid #464242;
+}
+.searchcon:focus{
+    border:1px solid #4791ff;
+}
+.photosearch {
+    display: inline-block;
+    width: 18px;
+    height: 15px;
+    position:absolute;
+    right:105px;
+    top:2px;
+    z-index:3;
+    cursor:pointer;
+    background-image: url('../img/gray.png');
+}
+.photosearch:hover {
+    background-image: url('../img/blue.png');
+}
+#sub{
+    height:36px;
+    padding:0px;
+    background:#38f;
+    color:white;
+    border:0;
+    padding:0 20px;
+    cursor:pointer;
+}
+#sub:hover{
+    background:#116ae5;
+}
+p{
+  margin:0;  
+}
+footer{
+    width:630px;
+    margin:auto;
+    position:absolute;
+    bottom:44px;
+    left:0;right:0;
+    font-size:12px;
+    line-height:24px;
+}
+.info>p>a{
+    color:#999;
+}
+
+
+* html nav{
+    float:right;
+}
+* html article img{
+    display:block;
+    width:270px;
+    margin:auto;
+}
+* html article input{
+    line-height:34px;
+}
+* html .photosearch{
+    display: inline-block;
+    width: 18px;
+    height: 13px;
+    position:absolute;
+    left:490px;
+    top:10px;
+    z-index:5;
+    cursor:pointer;
+    background-image: url('../img/gray.png');
+    background-repeat:no-repeat;
+}
+* html footer{
+    position:relative;
+    top:200px;
+    bottom:0;
+    display:block;
+    left:initial;right:initial;
+    margin-left:auto;margin-right:auto;
+}
+* html footer a{
+    color:#999;
+}
+
+.mobile{
+    padding:10px;
+    background:#EEEFF0;
+}
+
+.logo{
+    text-align:center;
+    padding:30px 0;
+}
+.inputdiv{
+
+}
+.btns{
+    display: flex;
+    display: -webkit-flex;
+    margin-top:20px;
+}
+.btns >a{
+    flex-grow:1;
+    text-align:center;
+    padding-left:3%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-flex-flow: column;
+    flex-flow: column;
+    color:#666;
+    text-decoration:none;
+    font-size:12px;
+}
+
+
+.inputdiv{
+    text-align:center;
+    display: flex;
+    display: -webkit-flex;
+}
+.mobilesearchcon{
+    display: flex;
+    display: -webkit-flex;
+    flex-grow:1;
+    border:1px solid #999;
+    width:75%;height:34px;padding:0 10px;
+    outline:none;
+    /*outline去除*/
+}
+.mobilesearchcon:hover{
+    border:1px solid #464242;
+}
+.mobilesearchcon:focus{
+    border:1px solid #4791ff;
+}
+
+.mobilesub{
+    height:36px;
+    padding:0px;
+    background:#38f;
+    color:white;
+    border:0;
+    padding:0 20px;
+    cursor:pointer;
+}
+.mobilesub:hover{
+    background:#116ae5;
+}
+.blocks{
+    background:#fff;
+    padding:0 10px;
+    margin-top:20px;
+}
+
+.blocktitle{
+    color:#999;
+}
+.webs>div{
+    box-sizing:border-box;
+    width:25%;
+    float:left;
+    line-height:42px;
+    font-size:14px;
+    text-align:center;
+}
+.webs:after{
+    display:block;
+    content:"";
+    clear:both;
+}
+.news>div{
+    width:50%;
+    text-align:left;
+}
+
+.fyb{
+    text-align:right;
+    line-height:42px;
+    border-top:1px solid #f4f5f6;
+}
+.fyb a{    
+    padding-right: 14px;
+    font-size: 14px;
+    color:#0058d2;
+    text-decoration:none;
+}
+
+.pc {
+    display: none;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .pc {
+        display: block;
+    }
+    .mobile{
+        display:none;
+    }
+}
+@media screen and (max-width: 768px) {
+    body,html{
+        height:100%;
+        background:#EEEFF0;
+    }
+}

@@ -1,0 +1,10 @@
+C:\Users\hercules\Desktop\极客学院作业\006\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe.config
+C:\Users\hercules\Desktop\极客学院作业\006\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe
+C:\Users\hercules\Desktop\极客学院作业\006\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.pdb
+C:\Users\hercules\Desktop\极客学院作业\006\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\myClassLibrary.dll
+C:\Users\hercules\Desktop\极客学院作业\006\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\myClassLibrary.pdb
+C:\Users\hercules\Desktop\极客学院作业\006\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
+C:\Users\hercules\Desktop\极客学院作业\006\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.csproj.GenerateResource.Cache
+C:\Users\hercules\Desktop\极客学院作业\006\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.exe
+C:\Users\hercules\Desktop\极客学院作业\006\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.pdb
+C:\Users\hercules\Desktop\极客学院作业\006\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Form1.resources

@@ -1,0 +1,6 @@
+C:\Users\hercules\Desktop\极客学院作业\004\BootstrapAdmin\BootstrapAdmin\bin\BootstrapAdmin.dll.config
+C:\Users\hercules\Desktop\极客学院作业\004\BootstrapAdmin\BootstrapAdmin\bin\BootstrapAdmin.dll
+C:\Users\hercules\Desktop\极客学院作业\004\BootstrapAdmin\BootstrapAdmin\bin\BootstrapAdmin.pdb
+C:\Users\hercules\Desktop\极客学院作业\004\BootstrapAdmin\BootstrapAdmin\obj\Debug\BootstrapAdmin.dll
+C:\Users\hercules\Desktop\极客学院作业\004\BootstrapAdmin\BootstrapAdmin\obj\Debug\BootstrapAdmin.pdb
+C:\Users\hercules\Desktop\极客学院作业\004\BootstrapAdmin\BootstrapAdmin\obj\Debug\BootstrapAdmin.csprojResolveAssemblyReference.cache

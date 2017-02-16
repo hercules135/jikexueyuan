@@ -1,0 +1,40 @@
+﻿.div1{
+    margin: auto;  
+    position: absolute;  
+    top: 0; left: 0; bottom: 0; right: 0;
+    width:300px;
+    height:300px;
+}
+.div1 div{
+    float:left;
+    width:100px;height:100px;
+    box-shadow:0 0 10px black;
+}
+.div1 div:nth-child(1){
+    margin-left:100px;
+    margin-right:100px;
+    background:#FF4124;
+}
+.div1 div:nth-child(2){
+    background:#A6325A;
+}
+.div1 div:nth-child(3){
+    box-shadow:none;
+    z-index:-1;/*不要挡住阴影*/
+    position:relative;
+    
+}
+.div1 div:nth-child(4){
+    background:#206FA1;
+}
+.div1 div:nth-child(5){
+    margin-left:100px;
+    background:#48A7C2;
+}
+
+
+.div1 div:nth-child(3) img{
+    margin: auto;  
+    position: absolute;  
+    top: 0; left: 0; bottom: 0; right: 0;  
+}

@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0"/>
+    <title>百度新闻</title>
+    <link href="css/normazlize.css" rel="stylesheet" />
+    <link href="fonts/iconfont.css" rel="stylesheet" />
+    <link href="css/news.css" rel="stylesheet" />
+</head>
+<body >
+    <div class="container">
+        <header class="cl">
+            <a><i class="iconfont icon-baidu"></i></a>
+            <a><i class="iconfont icon-user"></i></a>
+            <a><i class="iconfont icon-plus"></i></a>
+            <a><i class="iconfont icon-search"></i></a>
+        </header>
+        <nav>
+            <ul class="cl">
+                <li>精选<i></i></li>
+                <li>百家<i></i></li>
+                <li>本地<i></i></li>
+                <li>娱乐<i></i></li>
+                <li>社会<i></i></li>
+                <li>军事<i></i></li>
+                <li>女人<i></i></li>
+                <li>搞笑<i></i></li>
+                <li style="width:33.33%">互联网<i></i></li>
+                <li>科技<i></i></li>
+                <li>更多<i></i></li>
+            </ul>
+        </nav>
+        <article>
+            <div class="itemlist">
+                <div class="news_item cl">
+                    <div class="pic">
+                        <img src="img/2.JPEG" />
+                    </div>
+                    <div class="detail">
+                        <div class="title">彭博报价系统：在岸人民币/美元跌破7</div>
+                        <div class="describe">
+                            <span class="time">2016/12/27</span>
+                            <span class="src">热点</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="more">点击加载更多</button>
+        </article>
+    </div>
+</body>
+</html>
+
+<script id="item" type="text/x-dot-template">
+    {{ for(var x in it) { }}
+    <div class="news_item cl">
+        <div class="pic">
+            <img src="{{=it[x].picturesrc}}" />
+        </div>
+        <div class="detail">
+            <div class="title">{{=it[x].title}}</div>
+            <div class="describe">
+                <span class="time">{{=it[x].time}}</span>
+                <span class="src">{{=it[x].src}}</span>
+            </div>
+        </div>
+    </div>
+    {{ } }}
+</script>
+
+<script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/doT.min.js"></script>
+<script src="js/index.js"></script>

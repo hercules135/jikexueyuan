@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>后台首页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/StyleSheet1.css" rel="stylesheet" /></head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-header"><!--响应式按钮需要的头部包装容器navbar-header-->
+            <button class="navbar-toggle" data-toggle="collapse" data-target="#responsive-navbar"><!--data-toggle="collapse"开启点击功能--><!--data-target="#responsive-navbar"设置点击后展开的目标 记得加#-->
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand"><strong>新闻管理后台</strong></a>
+        </div>
+        <div class="collapse navbar-collapse" id="responsive-navbar"><!--响应式小尺寸折叠的内容-->
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">首页</a></li>
+            </ul>
+            <form action="" class="navbar-form navbar-left">
+                <input type="text" placeholder="搜索" class="form-control" />
+                <button type="submit">
+                    <span class="glyphicon glyphicon-search"></span><!--bootstrap的字体图标-->
+                </button>
+            </form>
+            <div class="profile navbar-right">
+            <!--<ul class="nav navbar-nav">
+                <li><a href="#">登陆</a></li>
+                <li><a href="#">注册</a></li>
+            </ul>-->
+                <p class="navbar-text">您好,<a href="#" class="navbar-link">管理员</a></p>
+            </div>
+
+        </div>
+    </nav>
+    <div class="container">
+        <div class="col-md-6">
+
+            <div class="panel panel-default ">
+                <div class="panel-heading">
+                    <h3 class="panel-title">新闻</h3>
+                </div>
+                <div class="panel-body">
+                    <form role="form" id="f1" name="f1">
+                        <div class="form-group">
+                            <label >标题</label>
+                            <input type="text" name="title" class="form-control" placeholder="填写标题" required>
+                        </div>
+                        <div class="form-group">
+                            <label >图片</label>
+                            <input type="text" name="picturesrc" class="form-control" placeholder="填写图片路径" required>
+                            <input type="file" name="pic" id="pic" class="form-control" />
+                            <div></div>
+                        </div>
+                        <div class="form-group">
+                            <label >来源</label>
+                            <input type="text" name="src" class="form-control" placeholder="填写来源" required>
+                        </div>
+                        <div class="form-group">
+                            <label >时间</label>
+                            <input type="date" name="time" class="form-control" placeholder="选择发布时间" required>
+                        </div>
+                        <button type="button" class="btn btn-default" id="addnews">添加</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+
+            <div class="panel panel-default ">
+                <div class="panel-heading">
+                    <h3 class="panel-title">列表</h3>
+                </div>
+                <div class="panel-body">
+                    <table class="table table-hover ">
+                        <thead>
+                            <tr>
+                                <th>标题</th>
+                                <th>时间</th>
+                                <th>来源</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="myModalLabel">编辑新闻</h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form" id="f2" name="f2">
+                        <input type="hidden" value="" name="id"/>
+                        <div class="form-group">
+                            <label>标题</label>
+                            <input type="text" name="title" class="form-control" placeholder="填写标题" required>
+                        </div>
+                        <div class="form-group">
+                            <label>图片</label>
+                            <input type="text" name="picturesrc" class="form-control" placeholder="填写图片路径" required>
+                            
+                        </div>
+                        <div class="form-group">
+                            <label>来源</label>
+                            <input type="text" name="src" class="form-control" placeholder="填写来源" required>
+                        </div>
+                        <div class="form-group">
+                            <label>时间</label>
+                            <input type="date" name="time" class="form-control" placeholder="选择发布时间" required>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="save">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+<!-- DOT JS模板 用来模仿动态页面，通过导入数据 循环重复内容 -->
+<script id="item" type="text/x-dot-template">
+    {{ for(var x in it) { }}
+        <tr>
+            <td>{{=it[x].title}}</td>
+            <td>{{=it[x].time}}</td>
+            <td>{{=it[x].src}}</td>
+            <td>
+                <button class="btn btn-xs btn-info edit" data-toggle="modal" data-target="#myModal" newsid="{{=it[x].id}}" psrc="{{=it[x].picturesrc}}">编辑</button>
+                <button class="btn btn-xs btn-danger del" newsid="{{=it[x].id}}">删除</button>
+            </td>
+        </tr>
+    {{ } }}
+</script>
+<script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+<script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<script src="js/doT.min.js"></script>
+<script src="js/admin.js"></script>
+<script src="js/PHP upload.js"></script>

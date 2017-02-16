@@ -1,0 +1,6 @@
+C:\Users\hercules\Desktop\极客学院作业\005\几等生\几等生\bin\几等生.dll.config
+C:\Users\hercules\Desktop\极客学院作业\005\几等生\几等生\bin\几等生.dll
+C:\Users\hercules\Desktop\极客学院作业\005\几等生\几等生\bin\几等生.pdb
+C:\Users\hercules\Desktop\极客学院作业\005\几等生\几等生\obj\Debug\几等生.csprojResolveAssemblyReference.cache
+C:\Users\hercules\Desktop\极客学院作业\005\几等生\几等生\obj\Debug\几等生.dll
+C:\Users\hercules\Desktop\极客学院作业\005\几等生\几等生\obj\Debug\几等生.pdb

@@ -1,0 +1,13 @@
+C:\Users\hercules\Desktop\极客学院作业\006\给我上\给我上\bin\Debug\给我上.exe
+C:\Users\hercules\Desktop\极客学院作业\006\给我上\给我上\bin\Debug\myClassLibrary.dll
+C:\Users\hercules\Desktop\极客学院作业\006\给我上\给我上\bin\Debug\Newtonsoft.Json.dll
+C:\Users\hercules\Desktop\极客学院作业\006\给我上\给我上\bin\Debug\myClassLibrary.pdb
+C:\Users\hercules\Desktop\极客学院作业\006\给我上\给我上\bin\Debug\Newtonsoft.Json.xml
+C:\Users\hercules\Desktop\极客学院作业\006\给我上\给我上\obj\Debug\给我上.csprojResolveAssemblyReference.cache
+C:\Users\hercules\Desktop\极客学院作业\006\给我上\给我上\obj\Debug\给我上.Form1.resources
+C:\Users\hercules\Desktop\极客学院作业\006\给我上\给我上\obj\Debug\给我上.Properties.Resources.resources
+C:\Users\hercules\Desktop\极客学院作业\006\给我上\给我上\obj\Debug\给我上.csproj.GenerateResource.Cache
+C:\Users\hercules\Desktop\极客学院作业\006\给我上\给我上\obj\Debug\给我上.exe
+C:\Users\hercules\Desktop\极客学院作业\006\给我上\给我上\obj\Debug\给我上.pdb
+C:\Users\hercules\Desktop\极客学院作业\006\给我上\给我上\bin\Debug\给我上.exe.config
+C:\Users\hercules\Desktop\极客学院作业\006\给我上\给我上\bin\Debug\给我上.pdb

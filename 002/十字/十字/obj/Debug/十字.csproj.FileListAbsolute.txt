@@ -1,0 +1,6 @@
+C:\Users\hercules\Desktop\极客学院作业\第二次\十字\十字\bin\十字.dll.config
+C:\Users\hercules\Desktop\极客学院作业\第二次\十字\十字\bin\十字.dll
+C:\Users\hercules\Desktop\极客学院作业\第二次\十字\十字\bin\十字.pdb
+C:\Users\hercules\Desktop\极客学院作业\第二次\十字\十字\obj\Debug\十字.csprojResolveAssemblyReference.cache
+C:\Users\hercules\Desktop\极客学院作业\第二次\十字\十字\obj\Debug\十字.dll
+C:\Users\hercules\Desktop\极客学院作业\第二次\十字\十字\obj\Debug\十字.pdb

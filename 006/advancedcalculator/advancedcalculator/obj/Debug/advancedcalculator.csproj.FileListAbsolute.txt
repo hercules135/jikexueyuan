@@ -1,0 +1,6 @@
+C:\Users\hercules\Desktop\极客学院作业\006\advancedcalculator\advancedcalculator\bin\advancedcalculator.dll.config
+C:\Users\hercules\Desktop\极客学院作业\006\advancedcalculator\advancedcalculator\bin\advancedcalculator.dll
+C:\Users\hercules\Desktop\极客学院作业\006\advancedcalculator\advancedcalculator\bin\advancedcalculator.pdb
+C:\Users\hercules\Desktop\极客学院作业\006\advancedcalculator\advancedcalculator\obj\Debug\advancedcalculator.csprojResolveAssemblyReference.cache
+C:\Users\hercules\Desktop\极客学院作业\006\advancedcalculator\advancedcalculator\obj\Debug\advancedcalculator.dll
+C:\Users\hercules\Desktop\极客学院作业\006\advancedcalculator\advancedcalculator\obj\Debug\advancedcalculator.pdb

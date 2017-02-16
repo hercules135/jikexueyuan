@@ -1,0 +1,6 @@
+C:\Users\hercules\Desktop\极客学院作业\007\jikexueyuan\jikexueyuan\jikexueyuan\bin\jikexueyuan.dll.config
+C:\Users\hercules\Desktop\极客学院作业\007\jikexueyuan\jikexueyuan\jikexueyuan\bin\jikexueyuan.dll
+C:\Users\hercules\Desktop\极客学院作业\007\jikexueyuan\jikexueyuan\jikexueyuan\bin\jikexueyuan.pdb
+C:\Users\hercules\Desktop\极客学院作业\007\jikexueyuan\jikexueyuan\jikexueyuan\obj\Debug\jikexueyuan.csprojResolveAssemblyReference.cache
+C:\Users\hercules\Desktop\极客学院作业\007\jikexueyuan\jikexueyuan\jikexueyuan\obj\Debug\jikexueyuan.dll
+C:\Users\hercules\Desktop\极客学院作业\007\jikexueyuan\jikexueyuan\jikexueyuan\obj\Debug\jikexueyuan.pdb

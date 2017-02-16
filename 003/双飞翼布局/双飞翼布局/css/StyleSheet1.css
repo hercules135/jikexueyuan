@@ -1,0 +1,51 @@
+﻿*{
+    padding:0;
+    margin:0;
+}
+header{
+    height:150px;
+    background:orange;
+}
+footer{
+    height:100px;
+    background:orange;
+}
+
+.con { 
+    width:100%;
+     margin-right:auto; 
+     margin-left:auto; 
+     overflow:hidden;
+     /*配合9999让侧边同高不溢出*/
+}
+.con .mid { 
+    float:left; 
+    width:100%; 
+    min-height:30px; 
+    background:#000; 
+}
+.con .mid .main {
+    margin-left:190px; 
+    margin-right:190px;
+    /*如果需要加间距,就增加上面2个值*/
+    background:#0094ff;
+    min-height:30px;
+}
+.left { 
+    float:left; 
+    width:190px; 
+    min-height:30px; 
+    background:#f00; 
+    margin-left:-100%; 
+    margin-bottom:-9999px;
+    padding-bottom:9999px;
+}
+.right { 
+    float:left; 
+    width:190px; 
+    min-height:30px; 
+    background:#ff006e; 
+    margin-left:-190px; 
+    margin-bottom:-9999px;
+    padding-bottom:9999px;
+}

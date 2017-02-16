@@ -1,0 +1,214 @@
+@fontColor:#000;
+@topColor:#14D207;
+@bigColor:#fff;
+@passStationColor:gray;
+@thisStationColor:orange;
+@nextStationColor:#000;
+@finialStationColor:blue;
+
+@font-size-huge:200px;
+@font-size-bigtitle:58px;
+@font-size-righttitle:12px;
+@font-size-company:30px;
+@font-size-target:31px;
+@font-size-price:14px;
+@font-size-stations:15px;
+
+
+
+
+.wh(@width:initial,@height:initial){
+	width: @width;
+	height: @height;
+}
+.position_absolute(@top:initial,@right:initial,@bottom:initial,@left:initial){
+    position:absolute;
+    top: @top;
+    right:@right;
+    bottom:@bottom;
+    left:@left;
+}
+.position_absolute_TL(@top:initial,@left:initial,@bottom:initial,@right:initial){
+    position:absolute;
+    top: @top;
+    right:@right;
+    bottom:@bottom;
+    left:@left;
+}
+.fl{
+    float:left;
+}
+.clear{
+    content:"";
+    display:block;
+    clear:both;
+}
+
+#underground{
+    .wh(320px,320px);
+	border: 40px solid red;
+	border-radius: 50%;
+	box-sizing: border-box;
+	position: absolute;
+    top: -146px;
+    left: 107px;
+    transform: scale(0.06);
+}
+#underground:before,#underground:after{
+	content: "";
+    background: white;
+    .wh(80px,35px);
+}
+#underground:before{
+    .position_absolute_TL(150px,-40px);
+}
+#underground:after{
+    .position_absolute_TL(75px,231px);
+}
+#line1{
+    .wh(240px,40px);
+    .position_absolute_TL(110px);
+	background: red;
+}
+#line1:before,#line2:before{
+    .position_absolute_TL(-55px,8px);
+	content: "";
+    border-right: 75px solid transparent;
+    border-left: 75px solid transparent;
+    border-bottom: 95px solid red;
+}
+#line1:after,#line2:after{
+    .position_absolute_TL(-5px,48px);
+	content: "";
+    border-right: 36px solid transparent;
+    border-left: 36px solid transparent;
+    border-bottom: 45px solid white;
+	z-index: 2;
+}
+#line2{
+    .wh(0,0);
+    .position_absolute_TL(147px,118px);
+    border-right: 7px solid transparent;
+    border-left: 7px solid transparent;
+    border-top: 9px solid red;
+}
+#line2:after{
+    .position_absolute_TL(-51px,5px);
+}
+#line2:before{
+    .position_absolute_TL(-101px,-33px);
+}
+#num{
+	color: blue;
+	font-size: @font-size-huge;
+	z-index: 3;
+	position: relative;
+	text-align: center;
+    line-height:initial;
+}
+
+.container{
+    .wh(400px,800px);
+	border: 1px solid gray;
+	box-shadow: 1px 1px 3px gray;
+	border-radius: 30px;
+    display: flex;/*设置flex显示方式*/
+    flex-direction:column;/*柱状竖直排列*/
+    overflow: hidden;
+    font-weight:bold;
+    .header{
+	    flex: 2;
+	    border-radius:  30px 30px 0 0;
+	    border-bottom: 1px solid black;
+        padding:20px 10px 0 10px;
+	    background: @topColor;
+        .title1>div{
+            float:left;
+        }
+        .title1:after{
+            .clear;
+        }
+        .bigtitle{
+            .wh(55%);
+            font-size:@font-size-bigtitle;
+            color:@bigColor;
+            line-height:105px;
+        }
+        .righttitle{
+            padding-left:5px;
+            .wh(45%);
+            font-size:@font-size-righttitle;
+            font-weight:100;
+            box-sizing: border-box;
+        }
+        .company{
+            font-weight:bold;
+            font-size:@font-size-company;
+        }
+        .target{
+            color:@bigColor;
+            font-size:@font-size-target;
+            text-align:center;
+        }
+        .price{
+            margin-top:10px;
+            font-size:@font-size-price;
+            text-align:center;
+        }
+        .time>span{
+            width: 17%;
+            display: inline-block;
+        }
+    }
+    .content{
+	    flex: 6;
+        padding-left:75px;
+        margin-top:5px;
+        .stations>div{
+            .wh(250px,28px);
+            font-size:@font-size-stations; 
+            text-align: justify; 
+            line-height: 28px;
+            >span{
+                display: inline-block ;/* Opera */
+                padding-left: 100%; 
+            }
+        }
+         .arrow{
+            content:"";
+            .position_absolute_TL(225px,56px);
+            .wh(500px);
+            background:red;
+            border-left: 18px solid red;
+        }
+        .arrow:after{
+            .wh(0,0);
+            .position_absolute_TL(441px,-25px);
+            content:"";
+            display:block;
+            border-top: red 80px solid;
+            border-left: 25px solid white;
+        }
+        .pass{
+            color:@passStationColor;
+        }
+        .thisstation{
+            color:@thisStationColor;
+            position: relative;
+        }
+        .thisstation:before{
+            .wh(14px,14px);
+            .position_absolute_TL(6px, -26px);
+            content:"";
+            border-radius:50%;
+            background:@thisStationColor;
+        }
+        .finial{
+            color:@finialStationColor;
+        }
+    }
+}
+.footer{
+    .wh(initial,40px);
+    text-align:center;
+}

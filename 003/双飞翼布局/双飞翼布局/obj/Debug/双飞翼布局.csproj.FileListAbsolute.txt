@@ -1,0 +1,6 @@
+C:\Users\hercules\Desktop\极客学院作业\03\双飞翼布局\双飞翼布局\bin\双飞翼布局.dll.config
+C:\Users\hercules\Desktop\极客学院作业\03\双飞翼布局\双飞翼布局\bin\双飞翼布局.dll
+C:\Users\hercules\Desktop\极客学院作业\03\双飞翼布局\双飞翼布局\bin\双飞翼布局.pdb
+C:\Users\hercules\Desktop\极客学院作业\03\双飞翼布局\双飞翼布局\obj\Debug\双飞翼布局.csprojResolveAssemblyReference.cache
+C:\Users\hercules\Desktop\极客学院作业\03\双飞翼布局\双飞翼布局\obj\Debug\双飞翼布局.dll
+C:\Users\hercules\Desktop\极客学院作业\03\双飞翼布局\双飞翼布局\obj\Debug\双飞翼布局.pdb

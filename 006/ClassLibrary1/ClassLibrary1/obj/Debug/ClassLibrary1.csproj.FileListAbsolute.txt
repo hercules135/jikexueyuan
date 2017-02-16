@@ -1,0 +1,7 @@
+C:\Users\hercules\Desktop\极客学院作业\006\ClassLibrary1\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+C:\Users\hercules\Desktop\极客学院作业\006\ClassLibrary1\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+C:\Users\hercules\Desktop\极客学院作业\006\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\Users\hercules\Desktop\极客学院作业\006\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
+C:\Users\hercules\Desktop\极客学院作业\006\ClassLibrary1\ClassLibrary1\bin\Debug\BilibiliDM_PluginFramework.dll
+C:\Users\hercules\Desktop\极客学院作业\006\ClassLibrary1\ClassLibrary1\bin\Debug\BilibiliDM_PluginFramework.xml
+C:\Users\hercules\Desktop\极客学院作业\006\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.csprojResolveAssemblyReference.cache
